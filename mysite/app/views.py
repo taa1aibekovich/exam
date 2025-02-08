@@ -19,6 +19,7 @@ class CarViewSet(viewsets.ModelViewSet):
     ordering_fields = ['price',]
     ordering = ['price']
 
+
 class AuctionViewSet(viewsets.ModelViewSet):
     queryset = Auction.objects.all()
     serializer_class = AuctionSerializers
